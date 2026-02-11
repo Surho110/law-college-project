@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Justice Academy | Signup</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">THE JUSTICE ACADEMY</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="admissions.html">Admissions</a></li>
+    <li><a href="academics.html">Academics</a></li>
+    <li><a href="faculty.html">Faculty</a></li>
+    <li><a href="library.html">Library</a></li>
+    <li><a href="news.html">News</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <!-- New Auth Links -->
+    <li><a href="signup.html">Signup</a></li>
+    <li><a href="login.html">Login</a></li>
+  </ul>
+</nav>
+
+  <!-- Signup Form -->
+  <section class="leadership">
+    <div class="container">
+      <div class="apply-form">
+        <h2>Create Your Account</h2>
+        <form id="signupForm">
+          <input type="text" id="signupName" placeholder="Full Name" required>
+          <input type="email" id="signupEmail" placeholder="Email Address" required>
+          <input type="password" id="signupPassword" placeholder="Password" required>
+
+          <!-- Policy Affirmation -->
+          <label style="display:block; margin:15px 0;">
+            <input type="checkbox" id="policyCheck" required>
+            I affirm that I have read and agree to the 
+            <a href="policy.html" target="_blank">Principles of Policy</a>.
+          </label>
+
+          <button type="submit">Signup</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/auth.js"></script>
+</body>
+<!-- Footer -->
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="admissions.html">Admissions</a>
+            <a href="academics.html">Academics</a>
+            <a href="faculty.html">Faculty</a>
+            <a href="library.html">Library</a>
+            <a href="news.html">News</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 The Justice Academy. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

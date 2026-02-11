@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Justice Academy | LLB Application</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    .apply-form {
+      max-width: 600px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+    .apply-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #0d1b2a;
+    }
+    .apply-form input, .apply-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-family: 'Montserrat', sans-serif;
+    }
+    .apply-form button {
+      padding: 12px 20px;
+      background: #b8860b;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .apply-form button:hover {
+      background: #8e6807;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">THE JUSTICE ACADEMY</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="admissions.html">Admissions</a></li>
+    <li><a href="academics.html">Academics</a></li>
+    <li><a href="faculty.html">Faculty</a></li>
+    <li><a href="library.html">Library</a></li>
+    <li><a href="news.html">News</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <!-- New Auth Links -->
+    <li><a href="signup.html">Signup</a></li>
+    <li><a href="login.html">Login</a></li>
+  </ul>
+</nav>
+
+  <!-- Hero -->
+  <header class="hero" style="height: 40vh; background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1581090700227-4c4f7c5f9b3c?q=80&w=2070');">
+    <div class="hero-content">
+      <h1>LLB Hon’s Application</h1>
+    </div>
+  </header>
+
+  <!-- Application Form -->
+  <section class="leadership">
+    <div class="container">
+      <div class="apply-form">
+        <h2>Apply for LLB Hon’s</h2>
+        <form action="#" method="post" enctype="multipart/form-data">
+          <input type="text" name="name" placeholder="Full Name" required>
+          <input type="email" name="email" placeholder="Email Address" required>
+          <input type="text" name="cnic" placeholder="CNIC Number" required>
+          <label>Upload High School Certificate (PDF)</label>
+          <input type="file" name="hsc" accept=".pdf" required>
+          <label>Upload Personal Statement (PDF)</label>
+          <input type="file" name="statement" accept=".pdf" required>
+          <button type="submit">Submit Application</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="admissions.html">Admissions</a>
+      <a href="academics.html">Academics</a>
+      <a href="faculty.html">Faculty</a>
+      <a href="library.html">Library</a>
+      <a href="news.html">News</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 The Justice Academy. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
