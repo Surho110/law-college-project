@@ -185,3 +185,30 @@ footer {
         transition: 0.3s;
     }
 }
+/* Ensure body content clears the fixed navbar */
+body {
+  padding-top: 80px; /* same height as navbar */
+}
+
+/* Signup / Apply Form spacing */
+.apply-form {
+  max-width: 600px;
+  margin: 60px auto; /* extra margin so footer doesn’t overlap */
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  position: relative;
+  z-index: 1; /* keeps form above footer background */
+}
+
+/* Footer stays at bottom without overlapping */
+.footer {
+  background: #0d1b2a;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  position: relative; /* not fixed, so it won’t cover content */
+  margin-top: 40px;   /* spacing above footer */
+}
+
