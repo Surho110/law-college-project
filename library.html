@@ -1,52 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Library | Research Resources</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Justice Academy | Library</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    .statute-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+    .statute-card {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      width: 280px;
+      text-align: center;
+    }
+    .statute-card h3 {
+      color: #b8860b;
+      margin-bottom: 15px;
+      font-size: 1.2rem;
+    }
+    .download-btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #b8860b;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+    .download-btn:hover {
+      background: #8e6807;
+    }
+  </style>
 </head>
 <body>
 
-    <nav class="navbar">
-        <div class="logo">JUSTICE ACADEMY</div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="admissions.html">Admissions</a></li>
-            <li><a href="academics.html">Academics</a></li>
-            <li><a href="library.html" class="active">Library</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">THE JUSTICE ACADEMY</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="admissions.html">Admissions</a></li>
+    <li><a href="academics.html">Academics</a></li>
+    <li><a href="faculty.html">Faculty</a></li>
+    <li><a href="library.html">Library</a></li>
+    <li><a href="news.html">News</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <!-- New Auth Links -->
+    <li><a href="signup.html">Signup</a></li>
+    <li><a href="login.html">Login</a></li>
+  </ul>
+</nav>
 
-    <header class="hero" style="height: 40vh; background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=2070');">
-        <div class="hero-content">
-            <h1>Squire Law Library</h1>
+  <!-- Hero -->
+  <header class="hero" style="height: 40vh; background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=2070');">
+    <div class="hero-content">
+      <h1>Law Library</h1>
+    </div>
+  </header>
+
+  <!-- Statutes -->
+  <section class="leadership">
+    <div class="container">
+      <h2 class="section-title">Major Statutes of Pakistan</h2>
+      <div class="statute-grid">
+
+        <div class="statute-card">
+          <h3>Constitution of Pakistan</h3>
+          <a href="assets/pdfs/constitution.pdf" class="download-btn" download>Download</a>
         </div>
-    </header>
 
-    <section class="leadership">
-        <div class="container">
-            <h2 class="section-title">Legal Archives & Digital Access</h2>
-            <div class="leader-grid">
-                <div class="leader-card">
-                    <h3 style="color: #b8860b;">Physical Collection</h3>
-                    <p>Over 50,000 volumes of law reports, statutes, and legal journals dating back to the 19th century.</p>
-                </div>
-                <div class="leader-card">
-                    <h3 style="color: #b8860b;">Digital Database</h3>
-                    <p>Subscribed access to Westlaw, LexisNexis, and JSTOR for all current students and faculty.</p>
-                </div>
-            </div>
+        <div class="statute-card">
+          <h3>Pakistan Penal Code (PPC)</h3>
+          <a href="assets/pdfs/ppc.pdf" class="download-btn" download>Download</a>
         </div>
-    </section>
 
-    <footer>
-        <p>&copy; 2026 Surho Badshah Law College Project.</p>
-    </footer>
-</body>
-<script src="js/script.js"></script>
+        <div class="statute-card">
+          <h3>Code of Criminal Procedure (CrPC)</h3>
+          <a href="assets/pdfs/crpc.pdf" class="download-btn" download>Download</a>
+        </div>
+
+        <div class="statute-card">
+          <h3>Code of Civil Procedure (CPC)</h3>
+          <a href="assets/images/pdfs/cpc.pdf" class="download-btn" download>Download</a>
+        </div>
+
+        <div class="statute-card">
+          <h3>Qanun-e-Shahadat (Evidence Act)</h3>
+          <a href="assets/pdfs/qso.pdf" class="download-btn" download>Download</a>
+        </div>
+
+        <div class="statute-card">
+          <h3>Contract Act</h3>
+          <a href="assets/pdfs/contract.pdf" class="download-btn" download>Download</a>
+        </div>
+
+        <div class="statute-card">
+          <h3>Companies Act</h3>
+          <a href="assets/pdfs/companies.pdf" class="download-btn" download>Download</a>
+        </div>
+
+        <div class="statute-card">
+          <h3>Family Courts Act</h3>
+          <a href="assets/pdfs/family.pdf" class="download-btn" download>Download</a>
+        </div>
+
+        <div class="statute-card">
+          <h3>Labour Laws</h3>
+          <a href="assets/pdfs/labour.pdf" class="download-btn" download>Download</a>
+        </div>
+
+        <div class="statute-card">
+          <h3>Income Tax Ordinance</h3>
+          <a href="assets/pdfs/tax.pdf" class="download-btn" download>Download</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="admissions.html">Admissions</a>
+      <a href="academics.html">Academics</a>
+      <a href="faculty.html">Faculty</a>
+      <a href="library.html">Library</a>
+      <a href="news.html">News</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 The Justice Academy. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
+
