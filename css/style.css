@@ -244,5 +244,59 @@ body {
     cursor: pointer;
   }
 }
+/* Ensure content clears the fixed navbar */
+body {
+  padding-top: 80px; /* matches navbar height */
+}
+
+/* Admissions section spacing */
+.admissions-section {
+  padding: 60px 10%;
+  background: #f4f4f4;
+}
+
+.admissions-section h2 {
+  margin-bottom: 20px;
+}
+
+.admissions-section ul {
+  margin-bottom: 30px;
+}
+
+/* Apply buttons layout */
+.apply-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.apply-buttons a {
+  padding: 12px 25px;
+  background: #b8860b;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.3s;
+  flex: 1 1 200px; /* ensures equal sizing and no overlap */
+  text-align: center;
+}
+
+.apply-buttons a:hover {
+  background: #8e6807;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .apply-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .apply-buttons a {
+    width: 100%;
+  }
+}
 
 
