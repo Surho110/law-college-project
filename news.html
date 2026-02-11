@@ -1,41 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News & Events | Law College</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Justice Academy | News & Events</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    .news-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+    .news-card {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      width: 350px;
+      text-align: left;
+    }
+    .news-card h3 {
+      color: #b8860b;
+      margin-bottom: 10px;
+    }
+    .news-card span {
+      font-size: 0.85rem;
+      color: #555;
+      display: block;
+      margin-bottom: 8px;
+    }
+  </style>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo">JUSTICE ACADEMY</div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="news.html" class="active">News</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
 
-    <header class="hero" style="height: 40vh; background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1504711434969-e33886168f5c?q=80&w=2070');">
-        <div class="hero-content">
-            <h1>Latest News</h1>
+  <!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">THE JUSTICE ACADEMY</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="admissions.html">Admissions</a></li>
+    <li><a href="academics.html">Academics</a></li>
+    <li><a href="faculty.html">Faculty</a></li>
+    <li><a href="library.html">Library</a></li>
+    <li><a href="news.html">News</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <!-- New Auth Links -->
+    <li><a href="signup.html">Signup</a></li>
+    <li><a href="login.html">Login</a></li>
+  </ul>
+</nav>
+
+  <!-- Hero -->
+  <header class="hero" style="height: 40vh; background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1504711434969-e33886168f5c?q=80&w=2070');">
+    <div class="hero-content">
+      <h1>Latest News & Events</h1>
+    </div>
+  </header>
+
+  <!-- News Section -->
+  <section class="leadership">
+    <div class="container">
+      <div class="news-grid">
+
+        <div class="news-card">
+          <span>February 5, 2026</span>
+          <h3>Annual Moot Court Competition Announced</h3>
+          <p>Principal Muhammad Din Jamali has officially opened registration for the 2026 National Moot Court Championship held at our campus.</p>
         </div>
-    </header>
 
-    <section class="leadership">
-        <div class="container">
-            <div class="leader-card" style="max-width: 800px; margin: 0 auto; text-align: left;">
-                <span class="role">February 5, 2026</span>
-                <h3>Annual Moot Court Competition Announced</h3>
-                <p>Principal <strong>Muhammad Din Jamali</strong> has officially opened registration for the 2026 National Moot Court Championship held at our campus.</p>
-            </div>
+        <div class="news-card">
+          <span>February 10, 2026</span>
+          <h3>Spring Admissions Open</h3>
+          <p>Applications are now being accepted for LAT Classes, LLB Hon’s, and LLM programs for Spring 2026 intake.</p>
         </div>
-    </section>
 
-    <footer>
-        <p>&copy; 2026 Surho Badshah Law College Project.</p>
-    </footer>
-</body>
-<script src="js/script.js"></script>
+        <div class="news-card">
+          <span>January 28, 2026</span>
+          <h3>Farewell Party for Batch 2021</h3>
+          <p>A memorable farewell ceremony was organized to honor the graduating batch of 2021.</p>
+        </div>
+
+        <div class="news-card">
+          <span>January 20, 2026</span>
+          <h3>Annual Exams Announcement</h3>
+          <p>The examination department has released the schedule for annual exams starting March 2026.</p>
+        </div>
+
+        <div class="news-card">
+          <span>January 15, 2026</span>
+          <h3>Guest Lecture Series</h3>
+          <p>Renowned jurists and advocates will deliver lectures on contemporary legal challenges.</p>
+        </div>
+
+        <div class="news-card">
+          <span>January 10, 2026</span>
+          <h3>Internship Opportunities</h3>
+          <p>Students can now apply for internships with leading law firms through the Career Office.</p>
+        </div>
+
+        <div class="news-card">
+          <span>December 30, 2025</span>
+          <h3>Law Journal Publication</h3>
+          <p>The Justice Academy Law Journal has published its latest edition featuring student and faculty research.</p>
+        </div>
+
+        <div class="news-card">
+          <span>December 20, 2025</span>
+          <h3>Alumni Meet & Networking</h3>
+          <p>Alumni from across the country gathered for a networking event to strengthen professional ties.</p>
+        </div>
+
+        <div class="news-card">
+          <span>December 10, 2025</span>
+          <h3>Convocation Ceremony</h3>
+          <p>The annual convocation ceremony celebrated the achievements of graduating students with distinguished guests.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="admissions.html">Admissions</a>
+      <a href="academics.html">Academics</a>
+      <a href="faculty.html">Faculty</a>
+      <a href="library.html">Library</a>
+      <a href="news.html">News</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 The Justice Academy. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
+
