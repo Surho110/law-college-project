@@ -18,3 +18,7 @@ function openForm(formId) {
   // Scroll to form
   document.getElementById(formId).scrollIntoView({ behavior: 'smooth' });
 }
+function toggleMenu() {
+  document.querySelector('.nav-links').classList.toggle('active');
+}
+
